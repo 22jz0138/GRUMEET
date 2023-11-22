@@ -1,0 +1,28 @@
+.kv{
+    position:relative;
+    background-image: url('/public/KV.jpg');
+    min-height: 90vh;
+}
+.search_area{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 30vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.search_area_children{
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+
