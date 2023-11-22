@@ -23,6 +23,11 @@ ul{
 
 }
 
-/* button{
 
-} */
+button{
+  background-color: yellow;
+  border-radius: 20px;
+  border: dotted;
+  height: 60px;
+  width: 120px;
+}
