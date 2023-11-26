@@ -1,6 +1,12 @@
+html{
+  color: #35363f;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background: rgba(104, 103, 102, 0.1);
+
 }
 
 a {
@@ -8,26 +14,49 @@ a {
   text-decoration: none;
 }
 
-h1 h2 h3{
+p{
+  margin: 0;
+}
+
+h1 ,h2,h3,h4{
   margin: 0;
 }
 
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   line-height: 160%;
+
 }
 
 ul{
   list-style: none;
-
+  padding: 0;
 }
 
 
 button{
-  background-color: yellow;
+  background-color: #F6CE3B;
   border-radius: 20px;
   border: dotted;
   height: 60px;
-  width: 120px;
+  width: 130px;
+}
+
+button:hover{
+  background-color: #d2b445;
+}
+
+select{
+  height: 20px;
+}
+
+footer{
+  text-align: center;
+  background: #5d5c5c;
+  color: azure;
+}
+
+footer a{
+  color: azure;
 }
