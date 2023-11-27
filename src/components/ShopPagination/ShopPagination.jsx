@@ -1,5 +1,6 @@
 import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
+import styles from '@/components/ShopPagination/ShopPagination.module.css';
 
 //ページネーションcomponentの実装　表示する件数目を指定
 
@@ -12,6 +13,7 @@ function ShopPagination ({shopdata,onvalue}) {
     }
     return(
         <>
+          <div className={styles.pagination_wrap}>
             <Pagination
             count = {pagecount}
             defaultPage = {1}
@@ -26,6 +28,7 @@ function ShopPagination ({shopdata,onvalue}) {
                 />
               )}
             />
+          </div>
         </>
     )
 }
