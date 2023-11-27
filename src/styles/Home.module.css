@@ -72,6 +72,9 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.detail_area h2{
+  margin-top: 20px;
+}
 
 .shopdetail_wrap{
   display: block;
@@ -86,6 +89,8 @@
   width: 100%;
   border: 1px solid #d0d0ce;
   background: #f3f2ee;
+  line-height: 1.8; 
+  padding: 4px 8px;
 }
 
 .shopdetail_list h4{
