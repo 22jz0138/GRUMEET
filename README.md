@@ -55,7 +55,7 @@ Windows11 バージョン22H2
 ルートディレクトリに.envファイルを作成
 上記ファイルに
 API_KEY = **************
-*にはあなたが取得したAPI_KEYを入力してください
+「*****」にはあなたが取得したAPI_KEYを入力してください
 
 APIKEY は下記URLから取得してください
 https://webservice.recruit.co.jp/register
