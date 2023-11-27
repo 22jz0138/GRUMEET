@@ -1,6 +1,6 @@
-### 日本語
+## 日本語
 
-## GRUMEET  
+# GRUMEET  
 
 #　GRUMEETとは?
 GURUMEET は若い世代や、障害を持つ方々をターゲットとした飲食店検索アプリです。
@@ -67,9 +67,9 @@ https://webservice.recruit.co.jp/register
  二宮 
 
 
-### English（Translation）
+## English（Translation）
 
-## GRUMEET  
+# GRUMEET  
 
 # What is GRUMEET?
 GURUMEET is a restaurant search application targeting the younger generation and people with disabilities.
