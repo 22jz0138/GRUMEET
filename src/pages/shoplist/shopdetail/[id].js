@@ -7,6 +7,7 @@ import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import styles from "@/styles/Home.module.css";
 
+//店舗詳細ページ
 export default function ShopDetail  ()  {
   let router = useRouter();
     const [listdata, setListdata] = useState(null);

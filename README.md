@@ -30,7 +30,13 @@ GRUMEETは、「施設の設備や環境、サービスが分からないから�
 
 # 実行環境・使用技術
 
-Node.js v18.18.0
+- ホットペッパーグルメサーチAPI
+- google font API
+- Node.js v18.18.0
+- Geolocation API
+- React	  18.2.0
+- Next.js 14.0.2
+- Material UI 5.14.18
 
 ## 動作確認済みブラウザ
 Microsoft Edge

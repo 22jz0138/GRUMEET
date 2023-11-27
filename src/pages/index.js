@@ -4,8 +4,8 @@ import Header from '@/components/header/Header';
 import Search from '@/components/Search/Search';
 import styles from '@/styles/Home.module.css';
 
+//トップページ（検索画面）
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ export default function Home() {
          src='/KV.jpg' 
          alt="KV"
          objectFit="cover" 
-         layout="fill"
+         fill
          className={styles.kv}
         />
         <Search />
