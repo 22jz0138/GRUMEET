@@ -22,8 +22,8 @@ function ShopPagination ({shopdata,onvalue}) {
                 <PaginationItem
                   {...item}
                   sx={{ '&.Mui-selected': {
-                    backgroundColor: 'rgba(0, 0, 0, 0.2)' 
-                  },color: '#5c6bc0', Size: 'small', shape:'rounded', width:50, mb: 4 ,border:1}}
+                    backgroundColor: 'rgba(0, 0, 0, 0.4)' 
+                  },color: '#146c94', Size: 'small', shape:'rounded', width:50, mb: 4 ,border:1}}
                 />
               )}
             />
