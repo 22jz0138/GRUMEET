@@ -119,4 +119,4 @@ https://webservice.recruit.co.jp/register
 
  Japan Electronics College
  Department of Advanced Information Processing
- Ninomiya
+ By Ninomiya
