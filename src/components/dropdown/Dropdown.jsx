@@ -1,8 +1,8 @@
-
-
 import React from 'react';
 
 const Dropdown = ({ onSelectRange }) => {
+
+  //ドロップダウンリストの選択肢のvalueを格納
   const handleRangeChange = (event) => {
     const selectedRange = event.target.value;
     sessionStorage.setItem('selectedRange',selectedRange);

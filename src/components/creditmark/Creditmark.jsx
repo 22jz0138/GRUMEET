@@ -1,5 +1,8 @@
 import Styles from "@/components/creditmark/Creditmark"
 
+//https://webservice.recruit.co.jp/doc/hotpepper/guideline.html
+//上記リファレンスによる必須内容
+
 function Creditmark (){
     return(
         <div className={Styles.Creditmark}>

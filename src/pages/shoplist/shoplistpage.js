@@ -9,7 +9,7 @@ import ShopPagination from "@/components/ShopPagination/ShopPagination";
 
 
 export default function ShopListpage() {
-    const [data, setData] = useState(null);
+    const [shopsdata, setShopsdata] = useState(null);
     const [start, setStart] = useState();
 
     useEffect(() => {
@@ -20,13 +20,13 @@ export default function ShopListpage() {
             try {
                 const response = await fetch(`/api/hotapi?lat=${lat}&lng=${lng}&range=${range}&start=${start}`);
                 const result = await response.json();
-                setData(result);
+                setShopsdata(result);
             } catch (error) {
                 console.error('Error fetching data from server:', error);
             }
         };
         fetchData();
-    }, [start]); // ページングで別ページを選択すると再実行
+    }, [start]); 
     
     const handleChildStartChange = (value) => {
       const changeValue = (value - 1) * 10 + 1; 
@@ -42,7 +42,7 @@ export default function ShopListpage() {
           <Header />
           <main className={styles.main_area}>
             <ul>
-              {data && data.results.shop.map((item) => ( //＜TODO＞forEachに変更
+              {shopsdata && shopsdata.results.shop.map((item) => ( //＜TODO＞　component化
                 <Link key={item.id} href={{pathname: `shopdetail/[id]`, query: {id:item.id}}}>
                   <li  className={styles.shop}>
                   <div className={styles.leftSide}>
@@ -72,8 +72,8 @@ export default function ShopListpage() {
               ))}
             </ul>
             <ShopPagination
-              shopdata = {data}
-              onvalue = {handleChildStartChange }
+              shopdata = {shopsdata}
+              onvalue = {handleChildStartChange}
             />
           </main>
           <Footer/>

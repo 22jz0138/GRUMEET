@@ -8,18 +8,15 @@ export default async function handler(req, res) {
             `${baseUrl}?key=${process.env.API_KEY}&id=${id}&format=json`
         );
 
-        // 外部APIのレスポンスのステータスコードが成功（200番台）でない場合
+        // 外部APIのレスポンスのステータスコードが成功（200番台）でない場合エラーメッセージをコンソールに出力
         if (!apiResponse.ok) {
-            // エラーメッセージをコンソールに出力
+         
             throw new Error(`Failed to fetch data from external API. Status: ${apiResponse.status}`);
         }
-        // 外部APIからのレスポンスをJSON形式で取得
         const data = await apiResponse.json();
-        // 正常な場合、取得したデータをクライアントにJSON形式で返す
         res.status(200).json(data);
     } catch (error) {
         console.error('Error fetching data from external API:', error);
-        // エラーレスポンスをクライアントに返す
         res.status(500).json({ error: 'Internal Server Error' });
     }
 }

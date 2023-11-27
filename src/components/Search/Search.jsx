@@ -8,7 +8,7 @@ import Link from 'next/link';
 function Search  ()  {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
-  const [selectedRange, setSelectedRange] = useState(null); // 新しく追加
+  const [selectedRange, setSelectedRange] = useState(null);
 
   const successCallback = (position) => {
     const newLatitude = position.coords.latitude;
@@ -39,7 +39,7 @@ function Search  ()  {
         <div className={styles.search_area_children}>
           <h2>近くのお店を探そう！</h2>
         </div>
-        {/* <div className={styles.search_area_children}>
+        {/* <div className={styles.search_area_children}>  //TODO component化
           <h4>キーワードで検索</h4>
         </div>
         <div className={styles.search_area_children}>

@@ -9,14 +9,14 @@ import Footer from '@/components/footer/Footer';
 
 export default function ShopDetail  ()  {
   let router = useRouter();
-    const [data, setData] = useState(null);
+    const [listdata, setListdata] = useState(null);
     useEffect(() => {
       const exid = router.query.id;
         const fetchData = async () => {
             try {
                 const response = await fetch(`/api/detailapi?id=${exid}`);
                 const result = await response.json();
-                setData(result);
+                setListdata(result);
             } catch (error) {
                 console.error('Error fetching data from server:', error);
             }
@@ -31,7 +31,7 @@ export default function ShopDetail  ()  {
         </Head>
         <Header/>
         <main>
-        {data && data.results.shop.map((item, i) => (  //＜TODO＞component化
+        {listdata && listdata.results.shop.map((item, i) => (  //＜TODO＞component化
         <> 
           <div key={item.id}>
               <div className={styles.first_view}>

@@ -1,4 +1,4 @@
-
+// サーバーサイドからグルメサーチAPIにリクエストを送信
 export default async function handler(req, res) {
     const baseUrl = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/";
 
@@ -12,20 +12,16 @@ export default async function handler(req, res) {
             `${baseUrl}?key=${process.env.API_KEY}&lat=${lat}&lng=${lng}&range=${range}&start=${start}&count=10&format=json`
         );
 
-        // 外部APIのレスポンスのステータスコードが成功（200番台）でない場合
+        // 外部APIのレスポンスのステータスコードが成功（200番台）でない場合エラーを返す
         if (!apiResponse.ok) {
             throw new Error(`Failed to fetch data from external API. Status: ${apiResponse.status}`);
         }
 
         const data = await apiResponse.json();
 
-        // 正常な場合、取得したデータをクライアントにJSON形式で返す
         res.status(200).json(data);
     } catch (error) {
-        // エラーメッセージをコンソールに出力
         console.error('Error fetching data from external API:', error);
-
-        // エラーレスポンスをクライアントに返す
         res.status(500).json({ error: 'Internal Server Error' });
     }
 }
