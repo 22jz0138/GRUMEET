@@ -3,7 +3,6 @@ import PaginationItem from '@mui/material/PaginationItem';
 import styles from '@/components/ShopPagination/ShopPagination.module.css';
 
 //ページネーションcomponentの実装　表示する件数目を指定
-
 function ShopPagination ({shopdata,onvalue}) {
    const max_page = shopdata?.results?.results_available;
     const pagecount = Number(Math.ceil(max_page / 10 ));

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Header from '@/components/header/Header';
 import Head from 'next/head';
-import styles from "@/styles/Home.module.css";
 import Image from 'next/image';
+import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import styles from "@/styles/Home.module.css";
 
 export default function ShopDetail  ()  {
   let router = useRouter();

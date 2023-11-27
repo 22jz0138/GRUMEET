@@ -1,11 +1,11 @@
-import Header from "@/components/header/Header";
-import Head from "next/head";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ShopPagination from "@/components/ShopPagination/ShopPagination";
+import styles from "@/styles/Home.module.css";
 
 
 export default function ShopListpage() {

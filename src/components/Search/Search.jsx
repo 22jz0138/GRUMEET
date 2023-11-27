@@ -1,8 +1,8 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import styles from "@/components/Search/Search.module.css";
 import Dropdown from '../dropdown/Dropdown';
 import Creditmark from '../creditmark/Creditmark';
-import Link from 'next/link';
 
 
 function Search  ()  {
