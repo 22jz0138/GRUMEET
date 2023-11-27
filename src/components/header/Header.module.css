@@ -2,13 +2,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #F6CE3B;
+    background: #f0e091;
     min-height: 5vh;
     color: #000;
 }
 .top_header h1 {
     font-family: 'Monomaniac One', cursive;
     font-size: 2.5rem;
+    color: #007d13;
 }
 .navigation{
     display: flex;
@@ -25,7 +26,7 @@
 .header_ul a {
     font-family: 'Monomaniac One', cursive;
     font-size: 1.6rem;
-    color: #5C6BC0;
+    color: #146c94;
 }
 .title{
     margin: 0;
