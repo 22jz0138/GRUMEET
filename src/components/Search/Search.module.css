@@ -1,6 +1,5 @@
 .kv{
     position:relative;
-    background-image: url('/public/KV.jpg');
     min-height: 90vh;
 }
 .search_area{

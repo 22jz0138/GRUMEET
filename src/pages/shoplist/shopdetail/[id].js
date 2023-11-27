@@ -25,6 +25,7 @@ export default function ShopDetail  ()  {
         fetchData();
     }, []);
 
+
   return (
     <>
         <Head>
@@ -77,87 +78,87 @@ export default function ShopDetail  ()  {
           <div>
           {/* ＜TODO＞component化 */}
             <ul className={styles.topic_wrap}>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.free_drink.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                 <p>飲み放題</p>
                 <Image
                 className={styles.topic_img}
-                src='/drink.jpg'
+                src='/drink.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.free_drink}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.free_food.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                <p>食べ放題</p>
                 <Image
                 className={styles.topic_img}
-                src='/food.jpg'
+                src='/food.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.free_food}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.private_room.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                <p>個室</p>
                 <Image
                 className={styles.topic_img}
-                src='/Room.jpg'
+                src='/Room.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.private_room}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.parking.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                <p>駐車場</p>
                 <Image
                 className={styles.topic_img}
-                src='/Parking.jpg'
+                src='/Parking.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.parking}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.barrier_free.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                 <p>バリアフリー環境</p>
                 <Image
                 className={styles.topic_img}
-                src='/barrier_free.jpg'
+                src='/barrier_free.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.barrier_free}</p></li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.wifi.substr(0,2) === "なし" ? styles.deactive: ""}`}>
                <p>Wi-Fi</p>
                 <Image
                 className={styles.topic_img}
-                src='/WIFI.jpg'
+                src='/WIFI.png'
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.wifi}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.non_smoking.substr(0,) === "全面禁煙" ? styles.deactive: ""}`}>
                <p>喫煙/禁煙</p>
                 <Image
                 className={styles.topic_img}
-                src='/Nosmoking.jpg'
+                src={`${item.non_smoking.substr(0,4) === "全面禁煙" ? '/No_smoking.png': '/smoking.png'}`}
                 alt={item.name}
                 width={200}
                 height={200}
                 />
                 <p>{item.non_smoking}</p>
               </li>
-              <li className={styles.topic_li}>
+              <li className={`${styles.topic_li} ${item.card.substr(0,2) === "利用不可" ? styles.deactive: ""}`}>
                <p>カード利用</p>
                 <Image
                 className={styles.topic_img}
-                src='/card.jpg'
+                src='/card.png'
                 alt={item.name}
                 width={200}
                 height={200}

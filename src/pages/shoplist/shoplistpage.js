@@ -7,7 +7,7 @@ import Footer from "@/components/footer/Footer";
 import ShopPagination from "@/components/ShopPagination/ShopPagination";
 import styles from "@/styles/Home.module.css";
 
-
+//店舗一覧ページ
 export default function ShopListpage() {
     const [shopsdata, setShopsdata] = useState(null);
     const [start, setStart] = useState();
