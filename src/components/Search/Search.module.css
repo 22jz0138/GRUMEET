@@ -22,6 +22,11 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+.warning{
+    color: rgb(211, 45, 45);
+    font-weight: 800;
+}
+
 
 
 
