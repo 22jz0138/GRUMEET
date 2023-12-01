@@ -8,20 +8,26 @@ GURUMEET は若い世代や、障害を持つ方々をターゲットとした�
 下記画像がトップページになる検索画面です
 この画面では現在位置からの距離（半径）を選択し検索ボタンを押下します
 
-<img width="400" alt="GRUMEET_1" src="https://github.com/22jz0138/GRUMEET/assets/146900702/ee658582-c466-45d7-8f3e-815e8cf0941a">
+<img width="1128" alt="GRUMEET_1" src="https://github.com/22jz0138/GRUMEET/assets/146900702/ad5a7738-49cc-4551-ba19-888f2ba80d01">
+
+ブラウザで位置情報の取得の許可をしてください
+
+<img width="1128" alt="GRUMEET_2" src="https://github.com/22jz0138/GRUMEET/assets/146900702/48b33a9c-4159-4bbc-893e-163f3d2ad01b">
 
 検索ボタンを押すと選択した距離の範囲にある飲食店が一覧形式で表示されます
 
-<img width="400" alt="GRUMEET_3" src="https://github.com/22jz0138/GRUMEET/assets/146900702/7c9d1d48-0d71-4274-b117-b068edce71cd">
+<img width="1128" alt="GRUMEET_3" src="https://github.com/22jz0138/GRUMEET/assets/146900702/16470b4f-2923-4e3b-b5b2-e6f509c70874">
 
 一つの店舗をクリックすると、選択した店舗の詳細内容が表示されます。
 
-<img width="400" alt="GRUMEET_4" src="https://github.com/22jz0138/GRUMEET/assets/146900702/69dd6a1b-5b68-430f-a5cb-f317b6519c1c">
+<img width="1128" alt="GRUMEET_4" src="https://github.com/22jz0138/GRUMEET/assets/146900702/e20767aa-e1f0-4463-b72f-da6cbd835b4c">
+
 
 下にスクロールすると、詳細情報とともに
 ピックアップ項目があり、そのお店のサービスや環境が一目でわかるようになっています
 
-<img width="400" alt="GRUMEET_5" src="https://github.com/22jz0138/GRUMEET/assets/146900702/75373b0f-9b62-4bca-a272-e07569055843">
+<img width="1128" alt="GRUMEET_5" src="https://github.com/22jz0138/GRUMEET/assets/146900702/a69433d3-4e20-4ac9-b0e1-3757d91ffefa">
+
 
 #  特徴
 GRUMEETは他の飲食店検索アプリとはことなり。
