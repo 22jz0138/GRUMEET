@@ -39,7 +39,11 @@ button{
   width: 130px;
 }
 
-button:hover{
+button:disabled{
+  background: #afadad;
+}
+
+button:hover:not(:disabled){
   background-color: #d2b445;
 }
 
