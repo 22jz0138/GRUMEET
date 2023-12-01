@@ -9,13 +9,14 @@ function Search  ()  {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [selectedRange, setSelectedRange] = useState(null);
+  const [enablelocation, setEnablelocation] = useState(false)
 
   const successCallback = (position) => {
     const newLatitude = position.coords.latitude;
     const newLongitude = position.coords.longitude;
-
     setLatitude(newLatitude);
     setLongitude(newLongitude);
+    setEnablelocation(true);
   };
 
   const errorCallback = (error) => {
@@ -54,8 +55,9 @@ function Search  ()  {
         </div>
         <div className={styles.search_area_children}>
           {/* 現在位置の取得をトリガーにした検索はここで行う */}
+          <p className={styles.warning} style={{display: !enablelocation ?"":"none"}}>位置情報の取得を有効にしてください</p>
           <Link href="/shoplist/shoplistpage">
-            <button id="btn" onClick={handleClick}>
+            <button id="btn" onClick={handleClick} disabled={!enablelocation}>
               <p>検索開始！！</p>
             </button>
           </Link>
