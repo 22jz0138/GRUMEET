@@ -53,9 +53,6 @@ Windows11 バージョン22H2
 - HotPepper Gourmet Search API:https://webservice.recruit.co.jp/doc/hotpepper/guideline.html
 - google font API:https://developers.google.com/fonts?hl=ja
 - Geolocation API:https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API
-- React	  18.2.0 :https://ja.react.dev/learn/installation
-- Next.js 14.0.2 : https://nextjs-ja-translation-docs.vercel.app/docs/getting-started
-- Material UI 5.14.18 :https://mui.com/material-ui/getting-started/installation/
 
 # Usage
 ルートディレクトリに.envファイルを作成
