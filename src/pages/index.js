@@ -18,7 +18,6 @@ export default function Home() {
         <Image
          src='/KV.jpg' 
          alt="KV"
-         objectFit="cover" 
          fill
          className={styles.kv}
         />
